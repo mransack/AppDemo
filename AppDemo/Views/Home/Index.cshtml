@@ -1,0 +1,312 @@
+﻿@model AppDemo.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Log in";
+    Layout = null;
+}
+
+
+<html>
+<!-- Specific CSS in case where Footer is not coming at the bottom of the page -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+            height: 100%;
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        .minw400 {
+            min-width: 334px;
+        }
+
+        .white-container {
+            background: #fff;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+        }
+
+        .out-div {
+            margin-left: 400px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            height: 100vh;
+        }
+
+        .mega-nav {
+            background: #333645 url('../Images/csx.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 0px;
+            bottom: 0px;
+            width: 430px;
+            /*display: flex;
+            display: -webkit-flex;*/
+            display: grid;
+            height: 100%
+            /*justify-content: center;
+            align-items: center;
+            text-align: center;*/
+        }
+
+            .mega-nav:after {
+                content: '';
+                background: rgba(0,70,127,0.75);
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                z-index: 1;
+                display: block;
+            }
+
+            .mega-nav .logo {
+                color: #FFFFFF;
+                font-family: "Open Sans";
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33px;
+                text-align: center;
+                display: block;
+                z-index: 2;
+            }
+
+            .mega-nav .center.text {
+                color: #FFFFFF;
+                font-family: "Open Sans";
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33px;
+                text-align: center;
+                display: block;
+                z-index: 2;
+            }
+
+        .center.text {
+            position: relative;
+            padding-top: 151px;
+        }
+
+        .mega-nav .top.text {
+            color: #FFFFFF;
+            font-family: "Open Sans";
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33px;
+            text-align: center;
+            display: block;
+            z-index: 2;
+        }
+
+        .mega-nav .bottm.text {
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 24px;
+            text-align: center;
+            display: block;
+            z-index: 2;
+        }
+
+        .bottm.text p {
+            margin-top: 100px;
+            position: relative;
+            text-align: center;
+            bottom: 0px;
+            position: absolute;
+            margin-left: 176px;
+            margin-bottom: 35px;
+        }
+
+        .navbar-header {
+            width: 100%;
+        }
+
+        .navbar-brand {
+            display: none;
+        }
+
+        .login-logo {
+            width: 100%;
+            position: fixed;
+            z-index: 2;
+            top: 20px;
+            padding: 0px;
+            margin: 0px;
+            width: 300px;
+            height: 74px;
+            left: -20px;
+            display: block;
+        }
+
+            .login-logo img {
+                margin: 0px auto;
+                max-width: 190px;
+            }
+
+            .login-logo:after {
+                display: none;
+                content: 'CSX Property Tax';
+                color: #fff;
+                font-weight: 500;
+                position: absolute;
+                right: 32px;
+                font-size: 14px;
+                width: 159px;
+                text-align: left;
+                bottom: -8px;
+                line-height: 16px;
+                font-family: 'Roboto', sans-serif;
+                opacity: 0.9;
+                letter-spacing: 0.7px;
+            }
+
+        h2.heading {
+            color: #434C5F;
+            font-weight: 500;
+            margin: 0px;
+            padding: 0px 0px 5px 0px;
+        }
+
+        .subheading {
+            color: #596377;
+            margin-bottom: 36px;
+        }
+
+        .white-container {
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+
+        .logo-header {
+            color: #00467F;
+            font-family: "Open Sans";
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 41px;
+        }
+
+        .l-required {
+            color: #00467F;
+            font-family: "Open Sans";
+            font-size: 15px;
+            font-weight: 100;
+            line-height: 20px;
+        }
+
+        .lost {
+            color: #008DFF;
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 17px;
+            padding-left: 0px;
+            padding-top: 10px;
+        }
+
+        .btn-login {
+            background-color: #008DFF;
+            color: white;
+            border-radius: 4px;
+            font-family: "Open Sans";
+            float: right;
+        }
+
+        @@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            .mega-nav {
+                right: 0px;
+                width: 100%;
+                height: 92px;
+                border: none;
+            }
+
+                .mega-nav .center-content {
+                    display: none;
+                }
+
+            .out-div {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<!-- End -->
+<body>
+    <div class="row">
+
+        <div class="col-md-5 mega-nav" style="margin-left:10px" ;>
+            <div class="row top logo " style="margin-top: 40px;">
+
+
+
+            </div>
+
+            <div class="row center text">
+                @*<img src="~/Images/csx_white.png" style="height:60px" />*@
+            </div>
+
+            <div class="row bottm text " style="margin-bottom:-100px">
+
+
+                @*<img src="~/Images/ptplogo.png" />*@
+
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="container white-container">
+                <div class="row minw400">
+                    <div class="col-md-12" style="margin:0px auto; float:none;">
+                        <section id="loginForm">
+                            @using (Html.BeginForm("Login", "Account", new { ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <h2 class="heading"></h2>
+                                <div class="form-group">
+                                    <h3 class="logo-header">AWZM Product</h3><br>
+                                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                                    <label class="l-required">Username </label>
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email", @required="required"})
+
+                                </div>
+                                <div class="form-group">
+
+
+                                    <label class="l-required">Password</label>
+                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password", @required = "required" })
+
+
+                                </div>
+
+                                <div class="col-sm-8 lost" style="display:none"><a href="lostpassword">LOST PASSWORD?</a></div>
+                                <div class="form-group">
+
+                                    <input type="submit" value="LOGIN" class="btn btn-default btn-login" />
+                                </div>
+
+                            }
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

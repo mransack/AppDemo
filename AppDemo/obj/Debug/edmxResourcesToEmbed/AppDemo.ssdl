@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MvcAppDemoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="cse_role_userrelation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role_id" Type="int" />
+    <Property Name="user_id" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MvcAppDemo.dbo.cse_rolemaster' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="cse_rolemaster">
+    <Key>
+      <PropertyRef Name="role_id" />
+    </Key>
+    <Property Name="role_id" Type="int" Nullable="false" />
+    <Property Name="role_name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="cse_users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="first_name" Type="varchar" MaxLength="100" />
+    <Property Name="last_name" Type="varchar" MaxLength="100" />
+    <Property Name="email_id" Type="varchar" MaxLength="100" />
+    <Property Name="phone" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="MvcAppDemoModelStoreContainer">
+    <EntitySet Name="cse_role_userrelation" EntityType="Self.cse_role_userrelation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cse_users" EntityType="Self.cse_users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cse_rolemaster" EntityType="Self.cse_rolemaster" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [cse_rolemaster].[role_id] AS [role_id], 
+    [cse_rolemaster].[role_name] AS [role_name]
+    FROM [dbo].[cse_rolemaster] AS [cse_rolemaster]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

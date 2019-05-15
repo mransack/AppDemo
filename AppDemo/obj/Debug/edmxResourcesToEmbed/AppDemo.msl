@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MvcAppDemoModelStoreContainer" CdmEntityContainer="MvcAppDemoEntities">
+    <EntitySetMapping Name="cse_role_userrelation">
+      <EntityTypeMapping TypeName="MvcAppDemoModel.cse_role_userrelation">
+        <MappingFragment StoreEntitySet="cse_role_userrelation">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cse_users">
+      <EntityTypeMapping TypeName="MvcAppDemoModel.cse_users">
+        <MappingFragment StoreEntitySet="cse_users">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cse_rolemaster">
+      <EntityTypeMapping TypeName="MvcAppDemoModel.cse_rolemaster">
+        <MappingFragment StoreEntitySet="cse_rolemaster">
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

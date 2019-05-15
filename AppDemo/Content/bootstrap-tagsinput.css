@@ -1,0 +1,106 @@
+/*
+ * bootstrap-tagsinput v0.8.0
+ * 
+ */
+
+.bootstrap-tagsinput {
+    background-color: #fff;
+    border-bottom: 1px solid #b5b3b4;
+    display: inline-block;
+    padding: 2px 6px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 0px;
+    max-width: 100%;
+    line-height: 40px;
+    cursor: text;
+    width: 100%;
+    margin-top: -8px;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+  font-size:15px;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  margin-right: 6px;
+  color: #333;
+  background-color: #ffffff;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#2F2727));
+    background: -webkit-linear-gradient(top, #ffffff, #d6d6d6);
+    background: -moz-linear-gradient(top, #ffffff, #d6d6d6);
+    background: -ms-linear-gradient(top, #ffffff, #d6d6d6);
+    background: -o-linear-gradient(top, #ffffff, #d6d6d6);
+    -webkit-transition: background ease-out .5s;
+    -moz-transition: background ease-out .5s;
+    -ms-transition: background ease-out .5s;
+    -o-transition: background ease-out .5s;
+    transition: background ease-out .5s;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 0.4em 0.6em 0.4em;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 100%;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "\f00d";
+    font: normal normal normal 11px/1 FontAwesome;
+    padding: 0px 2px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    border: 2px solid #337ab7;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 16px;
+    color: #337ab7;
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.bootstrap-tagsinput .tag:hover [data-role="remove"]:after{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}

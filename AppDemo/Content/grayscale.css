@@ -1,0 +1,11 @@
+/*----------------Grayscale----------------*/
+
+
+* {
+    -webkit-filter: grayscale(100%) !important;
+    -webkit-filter: grayscale(1) !important;
+    filter: grayscale(100%) !important;
+    filter: url(data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter i…=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale);
+    filter: gray !important;
+    -ms-filter: gray !important;
+}

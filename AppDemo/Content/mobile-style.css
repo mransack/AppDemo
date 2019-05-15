@@ -1,0 +1,1245 @@
+﻿.remsug {
+    display:none;
+}
+/**Mobile UI Updates**/
+.frm-cbtn {
+    display: none;
+}
+
+.d-ipad-mobile {
+    display: none;
+}
+
+.d-desktop {
+    display: block;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .table-bordered {
+        border: 1px solid #ddd;
+    }
+
+    #frmSearch .col-sm-6, #frmSearch .col-sm-4, #frmSearch .col-sm-2 {
+        width: 100%;
+    }
+
+    #frmSearch {
+        max-width: 400px;
+    }
+
+    #searchResult .table thead, #divMobileVendorContracts .table thead, #divMobileRelatedContracts .table thead {
+        display: none;
+    }
+
+    #searchResult .table tbody, #divMobileVendorContracts .table tbody, #divMobileRelatedContracts .table tbody {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    #searchResult .table-striped > tbody > tr:nth-of-type(odd), #searchResult .table-striped > tbody > tr:nth-of-type(even), #divMobileVendorContracts .table-striped > tbody > tr:nth-of-type(odd), #divMobileVendorContracts .table-striped > tbody > tr:nth-of-type(even), #divMobileRelatedContracts .table-striped > tbody > tr:nth-of-type(odd), #divMobileRelatedContracts .table-striped > tbody > tr:nth-of-type(even) {
+        flex: 0 46%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 11px;
+        position: relative;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(1), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(1), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(1) {
+        color: #3075B0;
+        height: 18px !important;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(2), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(2), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(2) {
+        color: #4C3D3D;
+        font-size: 18px;
+        height: auto !important;
+        line-height: 24px;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(3), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(3), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(3) {
+        height: auto !important;
+        text-transform: none !important;
+    }
+
+        #searchResult .table > tbody > tr > td:nth-of-type(3):before, #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(3):before, #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(3):before {
+            content: "Contractor name:";
+            color: rgba(85,85,85,0.49);
+            font-size: 13px;
+            display: block;
+            text-transform: capitalize;
+        }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(4) {
+        color: #B5B3B4;
+        height: 18px !important;
+        position: absolute;
+        right: 0px;
+    }
+
+    #searchResult table.dataTable a.blk-btn, #divMobileVendorContracts table.dataTable a.blk-btn, #divMobileRelatedContracts table.dataTable a.blk-btn {
+        border: 1px solid #3075B0 !important;
+        color: #3075B0 !important;
+        display: inline-block;
+        padding: 4px 15px 5px 15px;
+        text-decoration: none !important;
+        outline: none;
+        text-transform: capitalize;
+        margin-top: 6px;
+    }
+
+    #searchResult table th, #searchResult table td, #divMobileVendorContracts table th, #divMobileVendorContracts table td, #divMobileRelatedContracts table th, #divMobileRelatedContracts table td {
+        border: none !important;
+    }
+
+    #searchResult #example_wrapper .row:nth-of-type(2), #divMobileVendorContracts #example_wrapper .row:nth-of-type(2), #divMobileRelatedContracts #example_wrapper .row:nth-of-type(2) {
+        border: none !important
+    }
+
+    #searchResult h3.custom-title span, #divMobileVendorContracts h3.custom-title span, #divMobileRelatedContracts h3.custom-title span {
+        font-size: 16px;
+        color: rgba(85,85,85,0.75);
+        letter-spacing: 0px;
+        display: block;
+        margin-top: 8px;
+    }
+
+    #searchResult h3.custom-title:after, #divMobileVendorContracts h3.custom-title:after, #divMobileRelatedContracts h3.custom-title:after {
+        display: none;
+    }
+
+    .nav22 {
+        max-width: 200px;
+        float: right;
+        margin-top: -57px !important;
+        border: none;
+        margin-right: 21px;
+    }
+
+    h3.custom-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+        h3.custom-title:after {
+            display: none;
+        }
+
+    .nav22 ul li:first-child {
+        padding-right: 15px;
+    }
+
+    .frm-cbtn {
+        float: right;
+        font-size: 27px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #115fa4;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .mb-0 {
+        margin-bottom: -10px !important;
+    }
+
+    p.bold-para {
+        font-size: 17px;
+    }
+
+    #getQuote .modal-dialog {
+        width: 680px;
+        margin: 30px auto;
+    }
+
+    #helpModal .modal-dialog {
+        width: 680px;
+        margin: 30px auto;
+    }
+
+    .d-ipad-mobile {
+        display: block;
+    }
+
+    .d-desktop {
+        display: none;
+    }
+
+    .border-box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 25px;
+    }
+
+    .cdbox h3.ven-name {
+        margin-top: 0px;
+        font-size: 21px;
+        margin-bottom: 17px;
+    }
+
+    .cdbox label {
+        color: rgba(85,85,85,0.49);
+        margin-bottom: 0px;
+    }
+
+    .cdbox p {
+        color: #4C3D3D;
+        margin-bottom: 20px;
+        line-height: 20px;
+        word-break: break-word;
+    }
+
+    .email-txt {
+        color: #2c6eaa !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 5px !important;
+    }
+
+    .mb-0 {
+        margin-bottom: 0px !important;
+    }
+
+    p.bold-para {
+        padding-bottom: 7px;
+        font-weight: 700 !important;
+        color: #4C3D3D;
+        font-size: 15px;
+        letter-spacing: -0.52px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .mt-10 {
+        margin-top: -8px;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    a i.fa-sort-down {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+        color: #ccc;
+        margin-top: 24px;
+    }
+
+    a.collapsed i.fa-sort-down {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-top: 14px;
+        color: #115fa4;
+    }
+
+    ul.bblst2 {
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+        ul.bblst2 li {
+            list-style-type: none;
+            display: inline;
+            position: relative;
+        }
+
+            ul.bblst2 li a {
+                display: block;
+                float: left;
+                border: 1px solid #3075B0;
+                padding: 8px 10px;
+                margin: 8px 15px 8px 0px;
+                color: #3075B0;
+                word-break: break-word;
+            }
+
+                ul.bblst2 li a:hover {
+                    text-decoration: none;
+                    background: #3075B0;
+                    color: #fff;
+                }
+
+    #example2_wrapper .row:nth-of-type(1), #example3_wrapper .row:nth-of-type(1) {
+        display: none;
+    }
+
+    .table-bordered {
+        border: none;
+    }
+
+    #divMobileRelatedContracts .nav22, #divMobileVendorContracts .nav22 {
+        margin-top: -70px !important;
+    }
+
+        #divMobileRelatedContracts .nav22 ul li:first-child, #divMobileVendorContracts .nav22 ul li:first-child {
+            padding-right: 24px;
+        }
+
+        #divMobileVendorContracts .nav22 ul {
+            margin-right: -19px;
+        }
+
+    header .x-nav-wrap.mobile .sub-menu li .h-feature-headline {
+        margin: 10px 0 10px 0;
+        font-size: 1.4em;
+    }
+
+    .x-navbar .mobile .x-nav ul {
+        margin-left: 0px;
+    }
+
+    table.dataTable tbody tr td:last-child {
+        text-align: left;
+    }
+
+    #searchResult table.dataTable a.blk-btn:active, #divMobileVendorContracts table.dataTable a.blk-btn:active, #divMobileRelatedContracts table.dataTable a.blk-btn:active {
+        background: #3075B0 !important;
+        color: #fff !important;
+    }
+
+    #searchResult table.dataTable a.blk-btn:hover, #divMobileVendorContracts table.dataTable a.blk-btn:hover, #divMobileRelatedContracts table.dataTable a.blk-btn:hover {
+        background: #3075B0 !important;
+        color: #fff !important;
+    }
+    .x-breadcrumbs {
+        visibility: hidden;
+    }
+    .dropdown-menu > span > li > a {
+        white-space: normal;
+    }
+
+    .remsug {
+        display: block;
+        position: absolute;
+        right: -1px;
+        top: -22px;
+        background: #444;
+        text-align: center;
+        color: #fff;
+        width: 23px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+/* Landscape */
+/*@media only screen and (min-width: 1366px) and (orientation: landscape) {
+    .table-bordered {
+        border: 1px solid #ddd;
+    }
+
+    #frmSearch .col-sm-6, #frmSearch .col-sm-4, #frmSearch .col-sm-2 {
+        width: 100%;
+    }
+
+    #frmSearch {
+        max-width: 400px;
+    }
+
+    #searchResult .table thead, #divMobileVendorContracts .table thead, #divMobileRelatedContracts .table thead {
+        display: none;
+    }
+
+    #searchResult .table tbody, #divMobileVendorContracts .table tbody, #divMobileRelatedContracts .table tbody {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    #searchResult .table-striped > tbody > tr:nth-of-type(odd), #searchResult .table-striped > tbody > tr:nth-of-type(even), #divMobileVendorContracts .table-striped > tbody > tr:nth-of-type(odd), #divMobileVendorContracts .table-striped > tbody > tr:nth-of-type(even), #divMobileRelatedContracts .table-striped > tbody > tr:nth-of-type(odd), #divMobileRelatedContracts .table-striped > tbody > tr:nth-of-type(even) {
+        flex: 0 47%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 11px;
+        position: relative;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(1), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(1), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(1) {
+        color: #3075B0;
+        height: 18px !important;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(2), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(2), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(2) {
+        color: #4C3D3D;
+        font-size: 18px;
+        height: auto !important;
+        line-height: 24px;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(3), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(3), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(3) {
+        height: auto !important;
+        text-transform: none !important;
+    }
+
+        #searchResult .table > tbody > tr > td:nth-of-type(3):before, #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(3):before, #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(3):before {
+            content: "Contractor name:";
+            color: rgba(85,85,85,0.49);
+            font-size: 13px;
+            display: block;
+            text-transform: capitalize;
+        }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(4) {
+        color: #B5B3B4;
+        height: 18px !important;
+        position: absolute;
+        right: 0px;
+    }
+
+    #searchResult table.dataTable a.blk-btn, #divMobileVendorContracts table.dataTable a.blk-btn, #divMobileRelatedContracts table.dataTable a.blk-btn {
+        border: 1px solid #3075B0 !important;
+        color: #3075B0 !important;
+        display: inline-block;
+        padding: 4px 15px 5px 15px;
+        text-decoration: none !important;
+        outline: none;
+        text-transform: capitalize;
+        margin-top: 6px;
+    }
+
+    #searchResult table th, #searchResult table td, #divMobileVendorContracts table th, #divMobileVendorContracts table td, #divMobileRelatedContracts table th, #divMobileRelatedContracts table td {
+        border: none !important;
+    }
+
+    #searchResult #example_wrapper .row:nth-of-type(2), #divMobileVendorContracts #example_wrapper .row:nth-of-type(2), #divMobileRelatedContracts #example_wrapper .row:nth-of-type(2) {
+        border: none !important
+    }
+
+    #searchResult h3.custom-title span, #divMobileVendorContracts h3.custom-title span, #divMobileRelatedContracts h3.custom-title span {
+        font-size: 16px;
+        color: rgba(85,85,85,0.75);
+        letter-spacing: 0px;
+        display: block;
+        margin-top: 8px;
+    }
+
+    #searchResult h3.custom-title:after, #divMobileVendorContracts h3.custom-title:after, #divMobileRelatedContracts h3.custom-title:after {
+        display: none;
+    }
+
+    .nav22 {
+        max-width: 200px;
+        float: right;
+        margin-top: -57px !important;
+        border: none;
+        margin-right: 21px;
+    }
+
+    h3.custom-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+        h3.custom-title:after {
+            display: none;
+        }
+
+    .nav22 ul li:first-child {
+        padding-right: 15px;
+    }
+
+    .frm-cbtn {
+        float: right;
+        font-size: 27px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #115fa4;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .mb-0 {
+        margin-bottom: -10px !important;
+    }
+
+    p.bold-para {
+        font-size: 17px;
+    }
+
+    #getQuote .modal-dialog {
+        width: 680px;
+        margin: 30px auto;
+    }
+
+    #helpModal .modal-dialog {
+        width: 680px;
+        margin: 30px auto;
+    }
+
+    .d-ipad-mobile {
+        display: block;
+    }
+
+    .d-desktop {
+        display: none;
+    }
+
+    .border-box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 25px;
+    }
+
+    .cdbox h3.ven-name {
+        margin-top: 0px;
+        font-size: 21px;
+        margin-bottom: 17px;
+    }
+
+    .cdbox label {
+        color: rgba(85,85,85,0.49);
+        margin-bottom: 0px;
+    }
+
+    .cdbox p {
+        color: #4C3D3D;
+        margin-bottom: 20px;
+        line-height: 20px;
+        word-break: break-all;
+    }
+
+    .email-txt {
+        color: #2c6eaa !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 5px !important;
+    }
+
+    .mb-0 {
+        margin-bottom: 0px !important;
+    }
+
+    p.bold-para {
+        padding-bottom: 7px;
+        font-weight: 700 !important;
+        color: #4C3D3D;
+        font-size: 15px;
+        letter-spacing: -0.52px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .mt-10 {
+        margin-top: -8px;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    .row .col-sm-6 i.fa-sort-down {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+        color: #ccc;
+        margin-top: 0px;
+    }
+
+    .row.collapsed .col-sm-6 i.fa-sort-down {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-top: -8px;
+        color: #115fa4;
+    }
+
+    ul.bblst2 {
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+        ul.bblst2 li {
+            list-style-type: none;
+            display: inline;
+            position: relative;
+        }
+
+            ul.bblst2 li a {
+                display: block;
+                float: left;
+                border: 1px solid #3075B0;
+                padding: 8px 10px;
+                margin: 8px 15px 8px 0px;
+                color: #3075B0;
+                word-break: break-word;
+            }
+
+                ul.bblst2 li a:hover {
+                    text-decoration: none;
+                    background: #3075B0;
+                    color: #fff;
+                }
+
+    #example2_wrapper .row:nth-of-type(1), #example3_wrapper .row:nth-of-type(1) {
+        display: none;
+    }
+
+    .table-bordered {
+        border: none;
+    }
+
+    #divMobileRelatedContracts .nav22, #divMobileVendorContracts .nav22 {
+        margin-top: -70px !important;
+    }
+
+        #divMobileRelatedContracts .nav22 ul li:first-child, #divMobileVendorContracts .nav22 ul li:first-child {
+            padding-right: 24px;
+        }
+
+        #divMobileVendorContracts .nav22 ul {
+            margin-right: -19px;
+        }
+
+    header .x-nav-wrap.mobile .sub-menu li .h-feature-headline {
+        margin: 10px 0 10px 0;
+        font-size: 1.4em;
+    }
+
+    .x-navbar .mobile .x-nav ul {
+        margin-left: 0px;
+    }
+}*/
+
+/*Portrait*/
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .table-bordered {
+        border: 1px solid #ddd;
+    }
+
+    #frmSearch .col-sm-6, #frmSearch .col-sm-4, #frmSearch .col-sm-2 {
+        width: 100%;
+    }
+
+    #frmSearch {
+        max-width: 400px;
+    }
+
+    #searchResult .table thead, #divMobileVendorContracts .table thead, #divMobileRelatedContracts .table thead {
+        display: none;
+    }
+
+    #searchResult .table tbody, #divMobileVendorContracts .table tbody, #divMobileRelatedContracts .table tbody {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    #searchResult .table-striped > tbody > tr:nth-of-type(odd), #searchResult .table-striped > tbody > tr:nth-of-type(even), #divMobileVendorContracts .table-striped > tbody > tr:nth-of-type(odd), #divMobileVendorContracts .table-striped > tbody > tr:nth-of-type(even), #divMobileRelatedContracts .table-striped > tbody > tr:nth-of-type(odd), #divMobileRelatedContracts .table-striped > tbody > tr:nth-of-type(even) {
+        flex: 0 47%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 11px;
+        position: relative;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(1), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(1), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(1) {
+        color: #3075B0;
+        height: 18px !important;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(2), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(2), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(2) {
+        color: #4C3D3D;
+        font-size: 18px;
+        height: auto !important;
+        line-height: 24px;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(3), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(3), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(3) {
+        height: auto !important;
+        text-transform: none !important;
+    }
+
+        #searchResult .table > tbody > tr > td:nth-of-type(3):before, #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(3):before, #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(3):before {
+            content: "Contractor name:";
+            color: rgba(85,85,85,0.49);
+            font-size: 13px;
+            display: block;
+            text-transform: capitalize;
+        }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(4) {
+        color: #B5B3B4;
+        height: 18px !important;
+        position: absolute;
+        right: 0px;
+    }
+
+    #searchResult table.dataTable a.blk-btn, #divMobileVendorContracts table.dataTable a.blk-btn, #divMobileRelatedContracts table.dataTable a.blk-btn {
+        border: 1px solid #3075B0 !important;
+        color: #3075B0 !important;
+        display: inline-block;
+        padding: 4px 15px 5px 15px;
+        text-decoration: none !important;
+        outline: none;
+        text-transform: capitalize;
+        margin-top: 6px;
+    }
+
+    #searchResult table th, #searchResult table td, #divMobileVendorContracts table th, #divMobileVendorContracts table td, #divMobileRelatedContracts table th, #divMobileRelatedContracts table td {
+        border: none !important;
+    }
+
+    #searchResult #example_wrapper .row:nth-of-type(2), #divMobileVendorContracts #example_wrapper .row:nth-of-type(2), #divMobileRelatedContracts #example_wrapper .row:nth-of-type(2) {
+        border: none !important
+    }
+
+    #searchResult h3.custom-title span, #divMobileVendorContracts h3.custom-title span, #divMobileRelatedContracts h3.custom-title span {
+        font-size: 16px;
+        color: rgba(85,85,85,0.75);
+        letter-spacing: 0px;
+        display: block;
+        margin-top: 8px;
+    }
+
+    #searchResult h3.custom-title:after, #divMobileVendorContracts h3.custom-title:after, #divMobileRelatedContracts h3.custom-title:after {
+        display: none;
+    }
+
+    .nav22 {
+        max-width: 200px;
+        float: right;
+        margin-top: -57px !important;
+        border: none;
+        margin-right: 21px;
+    }
+
+    h3.custom-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+        h3.custom-title:after {
+            display: none;
+        }
+
+    .nav22 ul li:first-child {
+        padding-right: 15px;
+    }
+
+    .frm-cbtn {
+        float: right;
+        font-size: 27px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #115fa4;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .mb-0 {
+        margin-bottom: -10px !important;
+    }
+
+    p.bold-para {
+        font-size: 17px;
+    }
+
+    #getQuote .modal-dialog {
+        width: 680px;
+        margin: 30px auto;
+    }
+
+    #helpModal .modal-dialog {
+        width: 680px;
+        margin: 30px auto;
+    }
+
+    .d-ipad-mobile {
+        display: block;
+    }
+
+    .d-desktop {
+        display: none;
+    }
+
+    .border-box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 25px;
+    }
+
+    .cdbox h3.ven-name {
+        margin-top: 0px;
+        font-size: 21px;
+        margin-bottom: 17px;
+    }
+
+    .cdbox label {
+        color: rgba(85,85,85,0.49);
+        margin-bottom: 0px;
+    }
+
+    .cdbox p {
+        color: #4C3D3D;
+        margin-bottom: 20px;
+        line-height: 20px;
+        word-break: break-word;
+    }
+
+    .email-txt {
+        color: #2c6eaa !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 5px !important;
+    }
+
+    .mb-0 {
+        margin-bottom: 0px !important;
+    }
+
+    p.bold-para {
+        padding-bottom: 7px;
+        font-weight: 700 !important;
+        color: #4C3D3D;
+        font-size: 15px;
+        letter-spacing: -0.52px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .mt-10 {
+        margin-top: -8px;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    a i.fa-sort-down {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+        color: #ccc;
+        margin-top: 24px;
+    }
+
+    a.collapsed i.fa-sort-down {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-top: 14px;
+        color: #115fa4;
+    }
+
+    ul.bblst2 {
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+        ul.bblst2 li {
+            list-style-type: none;
+            display: inline;
+            position: relative;
+        }
+
+            ul.bblst2 li a {
+                display: block;
+                float: left;
+                border: 1px solid #3075B0;
+                padding: 8px 10px;
+                margin: 8px 15px 8px 0px;
+                color: #3075B0;
+                word-break: break-word;
+            }
+
+                ul.bblst2 li a:hover {
+                    text-decoration: none;
+                    background: #3075B0;
+                    color: #fff;
+                }
+
+    #example2_wrapper .row:nth-of-type(1), #example3_wrapper .row:nth-of-type(1) {
+        display: none;
+    }
+
+    .table-bordered {
+        border: none;
+    }
+
+    #divMobileRelatedContracts .nav22, #divMobileVendorContracts .nav22 {
+        margin-top: -70px !important;
+    }
+
+        #divMobileRelatedContracts .nav22 ul li:first-child, #divMobileVendorContracts .nav22 ul li:first-child {
+            padding-right: 24px;
+        }
+
+        #divMobileVendorContracts .nav22 ul {
+            margin-right: -19px;
+        }
+
+    header .x-nav-wrap.mobile .sub-menu li .h-feature-headline {
+        margin: 10px 0 10px 0;
+        font-size: 1.4em;
+    }
+
+    .x-navbar .mobile .x-nav ul {
+        margin-left: 0px;
+    }
+
+    table.dataTable tbody tr td:last-child {
+        text-align: left;
+    }
+
+    #searchResult table.dataTable a.blk-btn:active, #divMobileVendorContracts table.dataTable a.blk-btn:active, #divMobileRelatedContracts table.dataTable a.blk-btn:active {
+        background: #3075B0 !important;
+        color: #fff !important;
+    }
+
+    #searchResult table.dataTable a.blk-btn:hover, #divMobileVendorContracts table.dataTable a.blk-btn:hover, #divMobileRelatedContracts table.dataTable a.blk-btn:hover {
+        background: #3075B0 !important;
+        color: #fff !important;
+    }
+    .x-breadcrumbs {
+        visibility: hidden;
+    }
+    .dropdown-menu > span > li > a {
+        white-space: normal;
+    }
+    .remsug {
+        display: block;
+        position: absolute;
+        right: -1px;
+        top: -22px;
+        background: #444;
+        text-align: center;
+        color: #fff;
+        width: 23px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (max-width: 567px) {
+    .x-navbar .mobile .x-nav ul {
+        margin-left: 0px;
+    }
+
+    header .x-nav-wrap.mobile .sub-menu li .h-feature-headline {
+        margin: 10px 0 10px 0;
+        font-size: 1.4em;
+    }
+
+    #divMobileVendorContracts .nav22 ul {
+        margin-right: -19px;
+    }
+
+    #divMobileRelatedContracts .nav22, #divMobileVendorContracts .nav22 {
+        margin-top: -70px !important;
+    }
+
+        #divMobileRelatedContracts .nav22 ul li:first-child, #divMobileVendorContracts .nav22 ul li:first-child {
+            padding-right: 24px;
+        }
+
+    .table-bordered {
+        border: none;
+    }
+
+    #frmSearch .col-sm-6, #frmSearch .col-sm-4, #frmSearch .col-sm-2 {
+        width: 100%;
+    }
+
+    #frmSearch {
+        max-width: 400px;
+    }
+
+    #searchResult .table thead, #divMobileVendorContracts .table thead, #divMobileRelatedContracts .table thead {
+        display: none;
+    }
+
+    #searchResult .table tbody, #divMobileVendorContracts .table tbody, #divMobileRelatedContracts .table tbody {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    #searchResult .table-striped > tbody > tr:nth-of-type(odd), #searchResult .table-striped > tbody > tr:nth-of-type(even), #divMobileVendorContracts .table-striped > tbody > tr:nth-of-type(odd), #divMobileVendorContracts .table-striped > tbody > tr:nth-of-type(even), #divMobileRelatedContracts .table-striped > tbody > tr:nth-of-type(odd), #divMobileRelatedContracts .table-striped > tbody > tr:nth-of-type(even) {
+        flex: 0 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 11px;
+        position: relative;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(1), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(1), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(1) {
+        color: #3075B0;
+        height: 18px !important;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(2), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(2), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(2) {
+        color: #4C3D3D;
+        font-size: 18px;
+        height: auto !important;
+        line-height: 24px;
+    }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(3), #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(3), #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(3) {
+        height: auto !important;
+        text-transform: none !important;
+    }
+
+        #searchResult .table > tbody > tr > td:nth-of-type(3):before, #divMobileVendorContracts .table > tbody > tr > td:nth-of-type(3):before, #divMobileRelatedContracts .table > tbody > tr > td:nth-of-type(3):before {
+            content: "Contractor name:";
+            color: rgba(85,85,85,0.49);
+            font-size: 13px;
+            display: block;
+            text-transform: capitalize;
+        }
+
+    #searchResult .table > tbody > tr > td:nth-of-type(4) {
+        color: #B5B3B4;
+        height: 18px !important;
+        position: absolute;
+        right: 0px;
+    }
+
+    #searchResult table.dataTable a.blk-btn, #divMobileVendorContracts table.dataTable a.blk-btn, #divMobileRelatedContracts table.dataTable a.blk-btn {
+        border: 1px solid #3075B0 !important;
+        color: #3075B0 !important;
+        display: inline-block;
+        padding: 4px 15px 5px 15px;
+        text-decoration: none !important;
+        outline: none;
+        text-transform: capitalize;
+        margin-top: 6px;
+    }
+
+    #searchResult table th, #searchResult table td, #divMobileVendorContracts table th, #divMobileVendorContracts table td, #divMobileRelatedContracts table th, #divMobileRelatedContracts table td {
+        border: none !important;
+    }
+
+    #searchResult #example_wrapper .row:nth-of-type(2), #divMobileVendorContracts #example_wrapper .row:nth-of-type(2), #divMobileRelatedContracts #example_wrapper .row:nth-of-type(2) {
+        border: none !important
+    }
+
+    #searchResult h3.custom-title span, #divMobileVendorContracts h3.custom-title span, #divMobileRelatedContracts h3.custom-title span {
+        font-size: 16px;
+        color: rgba(85,85,85,0.75);
+        letter-spacing: 0px;
+        display: block;
+        margin-top: 8px;
+    }
+
+    #searchResult h3.custom-title:after, #divMobileVendorContracts h3.custom-title:after, #divMobileRelatedContracts h3.custom-title:after {
+        display: none;
+    }
+
+    #example2_wrapper .row:nth-of-type(1), #example3_wrapper .row:nth-of-type(1) {
+        display: none;
+    }
+
+    .nav22 {
+        max-width: 200px;
+        float: right;
+        margin-top: -57px !important;
+        border: none;
+        margin-right: 0px;
+    }
+
+    h3.custom-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+        h3.custom-title:after {
+            display: none;
+        }
+
+    .nav22 ul li:first-child {
+        padding-right: 15px;
+    }
+
+    .shadow-box {
+        padding: 45px 20px 85px 20px;
+    }
+
+    .frm-cbtn {
+        float: right;
+        font-size: 27px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #115fa4;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .d-ipad-mobile {
+        display: block;
+    }
+
+    .d-desktop {
+        display: none;
+    }
+
+    .border-box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 25px;
+    }
+
+    .cdbox h3.ven-name {
+        margin-top: 0px;
+        font-size: 21px;
+        margin-bottom: 17px;
+    }
+
+    .cdbox label {
+        color: rgba(85,85,85,0.49);
+        margin-bottom: 0px;
+    }
+
+    .cdbox p {
+        color: #4C3D3D;
+        margin-bottom: 20px;
+        line-height: 20px;
+        word-break: break-word;
+    }
+
+    .email-txt {
+        color: #2c6eaa !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 20px !important;
+    }
+
+        .mb-5.last {
+            margin-bottom: 5px !important;
+        }
+
+    .mb-0 {
+        margin-bottom: 0px !important;
+    }
+
+    p.bold-para {
+        padding-bottom: 7px;
+        font-weight: 700 !important;
+        color: #4C3D3D;
+        font-size: 15px;
+        letter-spacing: -0.52px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .mt-10 {
+        margin-top: -8px;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+
+    a i.fa-sort-down {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+        color: #ccc;
+        margin-top: 24px;
+    }
+
+    a.collapsed i.fa-sort-down {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-top: 14px;
+        color: #115fa4;
+    }
+
+
+    ul.bblst2 {
+        margin: 0px;
+        padding: 0px 0px 15px 0px;
+        display: table-cell;
+    }
+
+        ul.bblst2 li {
+            list-style-type: none;
+            display: inline;
+            position: relative;
+        }
+
+            ul.bblst2 li a {
+                display: block;
+                float: left;
+                border: 1px solid #3075B0;
+                padding: 8px 10px;
+                margin: 8px 15px 8px 0px;
+                color: #3075B0;
+                word-break: break-word;
+            }
+
+                ul.bblst2 li a:hover {
+                    text-decoration: none;
+                    background: #3075B0;
+                    color: #fff;
+                }
+
+    table.dataTable tbody tr td:last-child {
+        text-align: left;
+    }
+
+    #searchResult table.dataTable a.blk-btn:active, #divMobileVendorContracts table.dataTable a.blk-btn:active, #divMobileRelatedContracts table.dataTable a.blk-btn:active {
+        background: #3075B0 !important;
+        color: #fff !important;
+    }
+
+    #searchResult table.dataTable a.blk-btn:hover, #divMobileVendorContracts table.dataTable a.blk-btn:hover, #divMobileRelatedContracts table.dataTable a.blk-btn:hover {
+        background: #3075B0 !important;
+        color: #fff !important;
+    }
+
+    .x-breadcrumbs {
+        display: none;
+    }
+    .dropdown-menu > span > li > a {
+        white-space: normal;
+    }
+    .remsug {
+        display: block;
+        position: absolute;
+        right: -1px;
+        top: -22px;
+        background: #444;
+        text-align: center;
+        color: #fff;
+        width: 23px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 992px) {
+}

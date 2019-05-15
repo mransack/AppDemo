@@ -1,0 +1,191 @@
+﻿@{
+    var currentPage = Request.Url.AbsoluteUri;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    @if (currentPage.Contains("Home/Search") || currentPage.Contains("Contract/Details/"))
+    {
+        <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no, target-densitydpi=device-dpi">
+    }
+    else
+    {
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    }
+    <title>@ViewBag.Title</title>
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/ico">
+    <meta name="description" content="State of Utah Best Value Cooperative Contracts. Available for use by any State of Utah government entity, public entity, or non-profit organization." />
+    <link rel="canonical" href="https://purchasing.utah.gov/statecontractdirectory/" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="State of Utah Best Value Cooperative Contracts - Division of Purchasing" />
+    <meta property="og:description" content="State of Utah Best Value Cooperative Contracts. Available for use by any State of Utah government entity, public entity, or non-profit organization." />
+    <meta property="og:url" content="https://purchasing.utah.gov/statecontractdirectory/" />
+    <meta property="og:site_name" content="Utah Division of Purchasing and General Services" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="State of Utah Best Value Cooperative Contracts. Available for use by any State of Utah government entity, public entity, or non-profit organization." />
+    <meta name="twitter:title" content="State of Utah Best Value Cooperative Contracts - Division of Purchasing" />
+
+    <link rel='stylesheet' id='font-awesome-four-css' href='~/Content/headerstyle/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wpa-style-css' href='~/Content/headerstyle/wpa-style.css?ver=4.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='x-stack-css' href='~/Content/headerstyle/integrity-light.css?ver=5.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='x-cranium-migration-css' href='~/Content/headerstyle/integrity-light-2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='x-google-fonts-css' href='//fonts.googleapis.com/css?family=Raleway%3A400%2C400italic%2C700%2C700italic%7CLato%3A300%2C700&#038;subset=latin%2Clatin-ext&#038;ver=5.1.1' type='text/css' media='all' />
+    <link rel="stylesheet" id="x-google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C400italic%2C700%2C700italic%7CLato%3A300%2C700&#038;subset=latin%2Clatin-ext&#038;ver=4.6.4" type="text/css" media="all" />
+    <link rel="stylesheet" id="less-style-css" href="~/Content/style-7e083dd51a.css" type="text/css" media="all" />
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/jquery-confirm.css")  @*Masud Added*@
+    @if (currentPage.Contains("Home/Search") || currentPage.Contains("Contract/Details/"))
+    {
+        <link rel='stylesheet' href='~/Content/mobile-style.css' type='text/css' media='all' />
+    }
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script type="text/javascript" src="/Scripts/jquery.min.js?ver=1.12.4"></script>
+
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Scripts/handlebars.runtime.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="/Scripts/wysihtml5x-toolbar.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap3-wysihtml5.min.js"></script>
+    <script type="text/javascript" src="/Scripts/chosen.jquery.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap-tagsinput.min.js"></script>
+    <script type="text/javascript" src="/Scripts/typeahead.bundle.min.js"></script>
+    <script src="/Scripts/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/Scripts/dataTables.bootstrap.min.js"></script>
+
+    <script src="/Scripts/jquery.form.js"></script>
+
+    <script type="text/javascript" src="/Scripts/widget.min.js"></script>
+    <script type="text/javascript" src="/Scripts/menu.min.js"></script>
+    <script type="text/javascript" src="/Scripts/analytics.js"></script>
+    <script src="/Scripts/jquery-confirm.min.js" type="text/javascript"></script>@*Masud Added*@
+    <style type="text/css">
+        img#wpstats {
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://secure.utah.gov/nav/fluidheader.js"></script>
+</head>
+<body class="page-template-default page page-id-6264 page-parent x-integrity x-integrity-light x-navbar-fixed-top-active x-full-width-layout-active x-content-sidebar-active x-post-meta-disabled x-v4_6_4 x-child-theme-active cornerstone-v1_3_3" ng-app="dasAngular">
+    <div id="top" class="site">
+
+        <div id="wpa" role="navigation" aria-label="Accessiblity">
+            <a href="#content">Skip to content</a>
+            <ul role="menu">
+                <li role="menuitem"><button id="high_contrast"><i class="fa fa-toggle-off"></i> <span>High Contrast</span></button></li>
+                <!--[if !IE]> -->
+                <li role="menuitem" class="grayscale"><button id="grayscale"><i class="fa fa-toggle-off"></i> <span>Grayscale</span></button></li>
+                <!-- <![endif]-->
+                <li role="menuitem"><button id="large_font"><i class="fa fa-toggle-off"></i> <span>Large Text</span></button></li>
+            </ul>
+        </div>
+        <a id="content"></a>
+        <div class="x-main full" role="main">
+            <article id="post-6264" class="post-6264 page type-page status-publish hentry no-post-thumbnail">
+                <div class="entry-content content">
+                    <div id="cs-content" class="cs-content">
+                        @RenderBody()
+                    </div>
+                </div>
+            </article>
+        </div>
+        <a class="x-scroll-top right fade" href="#top" title="Back to Top">
+            <i class="x-icon-angle-up" data-x-icon="&#xf106;"></i><span class="visually-hidden">Back to Top</span>
+        </a>
+        
+        
+        
+    </div>
+    <!-- END #top.site -->
+    <div style="display:none">
+    </div>
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        jQuery('#sandbox-container .input-group.date').datepicker();
+        jQuery('.selectpicker').selectpicker();
+
+        if (localStorage.getItem("HC") != null) {
+            jQuery('head').append('<link id="lnkHC" href="/Content/high-contrast.css" rel="stylesheet" type="text/css" />');
+            jQuery("#high_contrast").find(".fa").removeClass("fa-toggle-off").addClass("fa-toggle-on");
+        }
+        if (localStorage.getItem("GS") != null) {
+            jQuery('head').append('<link id="lnkGS" href="/Content/grayscale.css" rel="stylesheet" type="text/css" />');
+            jQuery("#grayscale").find(".fa").removeClass("fa-toggle-off").addClass("fa-toggle-on");
+        }
+        if (localStorage.getItem("LF") != null) {
+            jQuery('head').append('<link id="lnkLF" href="/Content/largetext.css" rel="stylesheet" type="text/css" />');
+            jQuery("#large_font").find(".fa").removeClass("fa-toggle-off").addClass("fa-toggle-on");
+        }
+
+        jQuery("#high_contrast").click(function () {
+            if (localStorage.getItem("HC") === null) {
+                localStorage.setItem("HC", true);
+                if (jQuery("#lnkGS").length) {
+                    jQuery('<link id="lnkHC" href="/Content/high-contrast.css" rel="stylesheet" type="text/css" />').insertBefore(jQuery("#lnkGS"));
+                } else {
+                    jQuery('head').append('<link id="lnkHC" href="/Content/high-contrast.css" rel="stylesheet" type="text/css" />');
+                }
+                jQuery(this).find(".fa").removeClass("fa-toggle-off").addClass("fa-toggle-on");
+            } else {
+                localStorage.removeItem("HC");
+                jQuery('#lnkHC').remove();
+                jQuery(this).find(".fa-toggle-on").addClass("fa-toggle-off").removeClass("fa-toggle-on");
+            }
+        })
+
+        jQuery("#grayscale").click(function () {
+            if (localStorage.getItem("GS") === null) {
+                localStorage.setItem("GS", true);
+
+                jQuery('head').append('<link id="lnkGS" href="/Content/grayscale.css" rel="stylesheet" type="text/css" />');
+                jQuery(this).find(".fa").removeClass("fa-toggle-off").addClass("fa-toggle-on");
+            } else {
+                localStorage.removeItem("GS");
+                jQuery('#lnkGS').remove();
+                jQuery(this).find(".fa").addClass("fa-toggle-off").removeClass("fa-toggle-on");
+            }
+        })
+
+        jQuery("#large_font").click(function () {
+            if (localStorage.getItem("LF") === null) {
+                localStorage.setItem("LF", true);
+                jQuery('head').append('<link id="lnkLF" href="/Content/largetext.css" rel="stylesheet" type="text/css" />');
+                jQuery(this).find(".fa").removeClass("fa-toggle-off").addClass("fa-toggle-on");
+            } else {
+                localStorage.removeItem("LF");
+                jQuery('#lnkLF').remove();
+                jQuery(this).find(".fa").addClass("fa-toggle-off").removeClass("fa-toggle-on");
+            }
+        })
+    </script>
+
+    <script>
+     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5219135-14"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-5219135-14');
+    </script>-->
+    <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
+        <script type='text/javascript'>
+
+    
+    </script>
+    <div id='ZN_0jsHKYpeWezBn2B'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+    <!--END WEBSITE FEEDBACK SNIPPET-->
+</body>
+</html>
